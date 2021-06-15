@@ -1,0 +1,2 @@
+src/sim7600_int.sh	/usr/bin/
+etc/systemd/system/sim7600-handler.service /etc/systemd/system/

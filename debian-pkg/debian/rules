@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+# main packaging script based on dh7 syntax
+%:
+	dh $@ --with systemd
+# make the service run by default & start it after installation
+override_dh_auto_install:
+	dh_auto_install
+	dh_systemd_enable || true
+	dh_systemd_start || true
+override_dh_auto_clean:
+	dh_auto_clean

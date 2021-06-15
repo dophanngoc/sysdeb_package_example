@@ -1,0 +1,11 @@
+Source: sim7600-config
+Section: main
+Priority: optional
+Maintainer: Pan Do <a*****@gmail.com>
+Build-Depends: debhelper (>= 9), dh-systemd
+Standards-Version: 3.9.5
+
+Package: sim7600-config
+Architecture: all
+Depends: ${misc:Depends}, net-tools, dpkg(>= 1.18.1) 
+Description: sim7600x configuration

@@ -1,0 +1,11 @@
+[Unit]
+Description = sim7600_configuration daemon
+
+[Service]
+ExecStart = /usr/bin/sim7600_int.sh
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
+
