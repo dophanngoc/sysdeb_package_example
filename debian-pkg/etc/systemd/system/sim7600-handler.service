@@ -1,10 +1,11 @@
 [Unit]
 Description = sim7600_configuration daemon
+#After = network.target
 
 [Service]
 ExecStart = /usr/bin/sim7600_int.sh
-Restart = always
-Type = simple
+RemainAfterExit = true
+Type = oneshot
 
 [Install]
 WantedBy = multi-user.target
