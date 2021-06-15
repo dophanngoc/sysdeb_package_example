@@ -1,6 +1,6 @@
 [Unit]
 Description = sim7600_configuration daemon
-#After = network.target
+After = NetworkManager.service
 
 [Service]
 ExecStart = /usr/bin/sim7600_int.sh
